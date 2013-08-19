@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Untersuchungsraum.Contact" table="District">
+        <id column="id" type="integer">
+            <generator class="org.hibernate.ogm.id.impl.OgmIdentityGenerator" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="Firstname"></column>
+        </property>
+
+        <property name="lastname" type="string">
+            <column name="lastname"></column>
+        </property>
+
+        <property name="email" type="string">
+            <column name="email"></column>
+        </property>
+    </class>
+</hibernate-mapping>

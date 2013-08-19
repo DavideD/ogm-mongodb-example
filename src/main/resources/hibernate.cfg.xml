@@ -1,0 +1,11 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+      "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+      "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.ogm.datastore.provider">MONGODB</property>
+        <property name="hibernate.ogm.mongodb.database">rcfdb</property>
+        <property name="hibernate.transaction.jta.platform">org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform</property>
+        <mapping resource="hibernate-contact.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
